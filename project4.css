@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.calc {
+    min-height: 100vh;
+    background-color: #3B4664;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 9%;
+}
+
+.number {
+    margin-right: 0.5rem;
+}
+
+.operator {
+    margin-right: 0.5rem;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.calculator {
+    background: #3a4452;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.calculator1 {
+    background: #000000;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    padding: 1px 1%;
+}
+
+.inputA {
+    background: #000000;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.calculator:hover {
+    border: 5px solid blue;
+}
+
+.calculator1:hover {
+    border: 5px solid blue;
+}
+
+input[type="text"] {
+    text-align: right;
+    width: 100%;
+    font-size: 40px;
+    color: #fff;
+    background: white;
+    border: 2px solid black;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 5px;
+}
+
+form input[type="button"] {
+    flex: 1;
+    height: 60px;
+    border-radius: 10px;
+    background: white;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .calculator {
+        padding: 1rem;
+    }
+
+    form input[type="button"] {
+        font-size: 30px;
+    }
+}
